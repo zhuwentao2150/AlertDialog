@@ -1,0 +1,77 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	<!-- 
+	centerVertical：当前控件垂直居中显示
+	centerHorizontal：当前控件水平居中显示
+	 -->
+    <TextView
+        android:id="@+id/text_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="各种消息框的用法" />
+    <!-- 简单的消息提示框按钮 -->
+    <Button 
+        android:id="@+id/but_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="简单消息提示框"
+        />
+    <Button 
+        android:id="@+id/but_02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="带了确认和取消按钮"
+        />
+    <Button 
+        android:id="@+id/but_03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="可以输入文本"
+        />
+    <Button 
+        android:id="@+id/but_04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="单选框"
+        />
+    <Button 
+        android:id="@+id/but_05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="多选框"
+        />
+    <Button 
+        android:id="@+id/but_06"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="列表显示框"
+        />
+    <Button 
+        android:id="@+id/but_07"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="图片显示框"
+        />
+    <!-- 实现走马灯的效果 -->
+    <TextView 
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="走马灯效果演示：singleLine,focusable,focusableInTouchMode设置为true,ellipsize设置成marquee"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        
+        />
+    
+</LinearLayout >
